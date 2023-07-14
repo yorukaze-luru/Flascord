@@ -27,8 +27,8 @@ dm_channels_read = ["dm_channels.read"]
 role_connections_write = ["role_connections.write"]
 applications_commands_permissions_update = ["applications.commands.permissions.update"]
 
-
-all = 
+none = []
+all = identify + email + connections + guilds + guilds_join + guilds_members_read + gdm_join + rpc + rpc_notifications_read + rpc_voice_read + rpc_voice_write + rpc_activities_write + bot + webhook_incoming + messages_read + applications_builds_upload + applications_builds_read + applications_commands + applications_store_update + applications_entitlements + activities_read + activities_write + relationships_read + voice + dm_channels_read + role_connections_write + applications_commands_permissions_update
 
 
 

@@ -19,7 +19,11 @@ applications_builds_read = ["applications.builds.read"]
 applications_commands = ["applications.commands"] 
 applications_store_update = ["applications.store.update"] 
 applications_entitlements = ["applications.entitlements"] 
-rpc_notifications_read = ["rpc.notifications.read"] 
-rpc_voice_read = ["rpc.voice.read"] 
-rpc_voice_write = ["rpc.voice.write"] 
-rpc_activities_write = ["rpc.activities.write"]
+activities_read = ["activities.read"] 
+activities_write = ["activities.write"] 
+relationships_read = ["relationships.read"] 
+voice = ["voice"]
+
+
+
+

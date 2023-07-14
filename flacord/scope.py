@@ -1,1 +1,13 @@
 
+identify = ["identify"]
+email = ["email"]
+connections = ["connections"]
+guilds = ["guilds"]
+guilds_join = ["guilds.join"]
+guilds_members_read = ["guilds.members.read"]
+gdm_join = ["gdm.join"]
+rpc = ["rpc"]
+rpc_notifications_read = ["rpc.notifications.read"]
+identify = ["identify"]
+identify = ["identify"]
+identify = ["identify"]

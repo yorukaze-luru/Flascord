@@ -28,3 +28,7 @@ role_connections_write = ["role_connections.write"]
 applications_commands_permissions_update = ["applications.commands.permissions.update"]
 
 
+all = 
+
+
+

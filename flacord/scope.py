@@ -23,7 +23,8 @@ activities_read = ["activities.read"]
 activities_write = ["activities.write"] 
 relationships_read = ["relationships.read"] 
 voice = ["voice"]
-
-
+dm_channels_read = ["dm_channels.read"]
+role_connections_write = ["role_connections.write"]
+applications_commands_permissions_update = ["applications.commands.permissions.update"]
 
 

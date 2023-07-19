@@ -10,7 +10,7 @@ class DiscordOauth2Session:
         self.oauth_url = self.base_url + '/oauth2/'
         self.get_token_url = self.oauth_url + '/token'
 
-    def login(self,scope=scope.all()):
+    def login(self,scope=scope.basic):
         self.scope = scope
         scope = '%20'.join(scope)
         login_url = f"{self.oauth_url}authorize?client_id={self.config['DISCORD_CLIENT_ID']}&redirect_uri={self.config['DISCORD_REDIRECT_URI']}&response_type=code&scope={scope}"
@@ -31,6 +31,5 @@ class DiscordOauth2Session:
             session['token_type'] = responce_json['token_type']
             session['expires_in'] = responce_json['expires_in']
             session['refresh_token'] = responce_json['refresh_token']
-            session['scope'] = responce_json['scope']
-        
-            return
+            session['scope'] = responce_json['scope']     
+        return

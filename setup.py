@@ -10,7 +10,7 @@ def load_requires_from_file(fname):
 
 setup(
     name='flacord',
-    url="https://github.com/yorukaze-luru/Flacord",
+    url="https://github.com/yorukaze-luru/flacord",
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,

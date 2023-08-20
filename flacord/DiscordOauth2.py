@@ -1,5 +1,6 @@
 from flacord import scope
 from flask import request, session, redirect, current_app
+import requests
 
 class DiscordOauth2Session:
     def __init__(self, app):

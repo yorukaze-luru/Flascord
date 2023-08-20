@@ -1,7 +1,7 @@
 from setuptools import setup, Extension, find_packages
 import os
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 def load_requires_from_file(fname):
     if not os.path.exists(fname):

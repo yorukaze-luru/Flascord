@@ -1,2 +1,2 @@
-from flacord.DiscordOauth2 import *
-from flacord import scope
+from flascord.DiscordOauth2 import *
+from flascord import scope

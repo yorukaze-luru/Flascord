@@ -34,3 +34,6 @@ class DiscordOauth2Session:
             session['refresh_token'] = responce_json['refresh_token']
             session['scope'] = responce_json['scope']     
         return
+
+    def refresh(self):
+        return

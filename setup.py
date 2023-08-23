@@ -9,8 +9,8 @@ def load_requires_from_file(fname):
     return [pkg.strip() for pkg in open(fname, 'r')]
 
 setup(
-    name='flacord',
-    url="https://github.com/yorukaze-luru/flacord",
+    name='Flascord',
+    url="https://github.com/yorukaze-luru/Flascord",
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,

@@ -1,4 +1,4 @@
-from flacord import scope
+from flascord import scope
 from flask import request, session, redirect, current_app
 import requests
 

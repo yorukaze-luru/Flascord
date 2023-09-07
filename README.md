@@ -1,4 +1,4 @@
-```markdown
+
 # Flascord: Discord OAuth2 Integration for Flask
 
 Flascord is a Python library that simplifies the integration of Discord OAuth2 authentication into your Flask web applications.

@@ -36,4 +36,12 @@ class DiscordOauth2Session:
         return
 
     def refresh(self):
+        data = {'client_id': self.config['DISCORD_CLIENT_ID'], 'client_secret': self.config['DISCORD_CLIENT_SECRET'], 'grant_type': 'refresh_token', 'refresh_token': session['refresh_token']}
+        accesstoken_request = requests.post(url=self.get_token_url, data=data)
+        responce_json = accesstoken_request.json()
+        session['access_token'] = responce_json['access_token']
+        session['token_type'] = responce_json['token_type']
+        session['expires_in'] = responce_json['expires_in']
+        session['refresh_token'] = responce_json['refresh_token']
+        session['scope'] = responce_json['scope']     
         return

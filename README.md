@@ -1,6 +1,16 @@
 
 # Flascord: Discord OAuth2 Integration for Flask
 
+.. image:: https://discord.com/api/guilds/1143754942381822064/embed.png
+   :target: https://discord.gg/nXzj3dg
+   :alt: Discordサーバーの招待
+.. image:: https://img.shields.io/pypi/v/flascord.svg
+   :target: https://pypi.python.org/pypi/flascord
+   :alt: PyPIのバージョン情報
+.. image:: https://img.shields.io/pypi/pyversions/flascord.svg
+   :target: https://pypi.python.org/pypi/flascord
+   :alt: PyPIのサポートしているPythonのバージョン
+
 Flascord is a Python library that simplifies the integration of Discord OAuth2 authentication into your Flask web applications.
 
 ## Installation

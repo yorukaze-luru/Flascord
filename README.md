@@ -16,7 +16,6 @@ pip install flascord
 1. Import the necessary classes from the library:
 
 ```python
-from flask import Flask
 from flascord import DiscordOauth2Session
 ```
 

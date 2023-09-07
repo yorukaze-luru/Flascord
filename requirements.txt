@@ -1,3 +1,2 @@
-Flask[async]
+Flask
 requests
-discord.py

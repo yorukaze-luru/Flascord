@@ -16,5 +16,10 @@ setup(
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,
+    KEYWORDS = 'flask discord oauth2'
+    CLASSIFIERS=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.6'
+    ]
     install_requires=load_requires_from_file('requirements.txt'),
 )

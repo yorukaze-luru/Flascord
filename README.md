@@ -16,7 +16,8 @@ pip install flascord
 1. Import the necessary classes from the library:
 
 ```python
-from flascord import Flascord, login_required
+from flask import Flask
+from flascord import DiscordOauth2Session
 ```
 
 2. Set up the required configuration in your Flask app:
@@ -25,44 +26,39 @@ from flascord import Flascord, login_required
 app.config['DISCORD_CLIENT_ID'] = 'your_client_id'
 app.config['DISCORD_CLIENT_SECRET'] = 'your_client_secret'
 app.config['DISCORD_REDIRECT_URI'] = 'your_redirect_uri'
+app.config['DISCORD_BOT_TOKEN'] = 'your_bot_token'
 ```
 
-3. Initialize the `Flascord` instance:
+3. Initialize the ` DiscordOauth2Session` instance:
 
 ```python
-flascord = Flascord(app)
+discord_oauth = DiscordOauth2Session(app)
 ```
 
-4. Protect routes that require authentication using the `@login_required` decorator:
+4. Implement the necessary routes for OAuth2 authorization:
 
 ```python
-@app.route('/profile')
-@login_required
-def profile():
-    user_info = flascord.get_user_info()
-    # Your code here to display the user's profile
-```
-
-5. Implement the necessary routes for OAuth2 authorization:
-
-```python
-@app.route('/login')
+@app.route("/login")
 def login():
-    return flascord.login()
+    return discord_oauth.login()
 
-@app.route('/logout')
-def logout():
-    return flascord.logout()
-
-@app.route('/callback')
+@app.route("/refresh")
+def refresh():
+    return discord_oauth.refresh()
+    
+@app.route("/callback/")
 def callback():
-    flascord.callback()
-    return redirect(url_for('profile'))
+    discord_oauth.callback()
+    return redirect(url_for(".success"))
+
+@app.route("/success")
+def success():
+    return "success"
 ```
 
 ## Contributing
 
-If you encounter any issues or would like to contribute, please feel free to open an issue or pull request on the [GitHub repository](https://github.com/your-username/flascord).
+If you encounter any issues or would like to contribute, please feel free to open an issue or pull request on the [GitHub repository](https://github.com/yorukaze-luru/Flascord).
 
 ## License
 

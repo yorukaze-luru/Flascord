@@ -19,7 +19,9 @@ setup(
     KEYWORDS = 'flask discord oauth2'
     CLASSIFIERS=[
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ]
     install_requires=load_requires_from_file('requirements.txt'),
 )

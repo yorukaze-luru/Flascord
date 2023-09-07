@@ -7,7 +7,7 @@ Flascord is a Python library that simplifies the integration of Discord OAuth2 a
 
 You can easily install Flascord using pip:
 
-```bash
+``` bash
 pip install flascord
 ```
 
